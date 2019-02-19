@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class exercicioNumPar {
+    public static void main (String[]args){
+
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        String resposta = "";
+        if (num<=10 && num>=0){
+            switch (num) {
+                case 10: case 8: case 6: case 4: case 2: case 0:
+                    resposta = "Par";
+                    break;
+                default:
+                    resposta = null;
+                    break;
+            }
+            if (resposta !=null){
+                System.out.println("O número está entre 0 e 10 e é " + resposta);
+            }else {
+                System.out.println("O número está entre 0 e 10 e é impar.");
+            }
+        }else{
+            System.out.println("O numero não está entre 0 e 10.");
+        }
+    }
