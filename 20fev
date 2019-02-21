@@ -27,7 +27,7 @@ public class guessGame {
             }
         }
         scanner.close();
-
+        System.out.println("Game is over.");
 
     }
 }
